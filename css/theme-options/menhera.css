@@ -1,0 +1,48 @@
+:root {
+  /* menhera — Y2K anime emo-girly, yandere/menhera vibes                  */
+  /* deep noir-violet base with iridescent hot-pink & amethyst bloom        */
+
+  --main-bg-color: radial-gradient(circle farthest-side at 15% 8%,  rgba(255, 20, 110, 0.14) 0%, rgba(255, 20, 110, 0)  52%),
+                   radial-gradient(circle farthest-side at 85% 92%, rgba(160,  0, 220, 0.11) 0%, rgba(160,  0, 220, 0)  52%),
+                   radial-gradient(circle farthest-side at 50% 50%, rgba( 80,  0, 130, 0.07) 0%, rgba( 80,  0, 130, 0)  70%),
+                   #0a000d center center/cover no-repeat fixed;
+
+  --modal-bg-color:    linear-gradient(160deg, #13001a 0%, #0a000d 100%) center center/cover no-repeat fixed;
+  --modal-header-color: linear-gradient(160deg, #1c0022 0%, #0f0015 100%) center center/cover no-repeat fixed;
+  --modal-footer-color: linear-gradient(160deg, #1c0022 0%, #0f0015 100%) center center/cover no-repeat fixed;
+
+  --drop-down-menu-bg: #1e0028;
+
+  --button-color:       #b8004d;
+  --button-color-hover: #ff1478;
+  --button-text:        #ffe0ea;
+  --button-text-hover:  #ffffff;
+
+  /* hot pink — yandere accent */
+  --accent-color:       255, 20, 120;
+  --accent-color-hover: rgba(var(--accent-color), .8);
+
+  /* sakura link tones */
+  --link-color:         #ff7eaa;
+  --link-color-hover:   #ffcce0;
+
+  /* label sits on accent badges */
+  --label-text-color:   #0a000d;
+
+  --text:               #ffe0ea;
+  --text-hover:         #ffffff;
+  --text-muted:         #8b5075;
+
+  /* Specials */
+  --arr-queue-color:    #ff7eaa;
+  --plex-poster-unwatched: #ff1478;
+
+  /* petio spinner — approximated for #ff1478 — https://codepen.io/jsm91/embed/ZEEawyZ */
+  --petio-spinner: invert(32%) sepia(90%) saturate(2400%) hue-rotate(308deg) brightness(112%) contrast(98%);
+
+  --gitea-color-primary-dark-4: 255, 20, 120;
+
+  --overseerr-gradient: radial-gradient(circle farthest-side at 15% 8%,  rgba(255, 20, 110, 0.14) 0%, rgba(255, 20, 110, 0)  52%),
+                        radial-gradient(circle farthest-side at 85% 92%, rgba(160,  0, 220, 0.11) 0%, rgba(160,  0, 220, 0)  52%),
+                        rgba(10, 0, 13, 0.96) center center/cover no-repeat fixed;
+}
