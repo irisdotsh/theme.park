@@ -30,7 +30,8 @@ jobs:
       - name: Wrong domain check
         run: |
           echo "$(git diff-tree --no-commit-id --name-only -r ${{ github.sha }})"
-          if git grep -q -E ${{ secrets.DOMAIN }} -- *.css; then
+          DOMAIN="${{ secrets.DOMAIN }}"
+          if [[ -n "$DOMAIN" ]] && git grep -q -E "$DOMAIN" -- '*.css'; then
             echo "Game over man!"
             exit 1
           fi
