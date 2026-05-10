@@ -1,48 +1,58 @@
 :root {
-  /* menhera — Y2K anime emo-girly, yandere/menhera vibes                  */
-  /* deep noir-violet base with iridescent hot-pink & amethyst bloom        */
+  /* menhera — Y2K nightcore anime                                              */
+  /* Yuno · Misa · C.C. · Rena — four yandere souls drifting through dark sky  */
 
-  --main-bg-color: radial-gradient(circle farthest-side at 15% 8%,  rgba(255, 20, 110, 0.14) 0%, rgba(255, 20, 110, 0)  52%),
-                   radial-gradient(circle farthest-side at 85% 92%, rgba(160,  0, 220, 0.11) 0%, rgba(160,  0, 220, 0)  52%),
-                   radial-gradient(circle farthest-side at 50% 50%, rgba( 80,  0, 130, 0.07) 0%, rgba( 80,  0, 130, 0)  70%),
-                   #0a000d center center/cover no-repeat fixed;
+  --main-bg-color:
+    /* Yuno Gasai — obsessive hot-pink aurora, top-left */
+    radial-gradient(ellipse 60% 45% at  8%  5%, rgba(255,  18, 100, 0.38) 0%, transparent 65%),
+    /* Misa Amane — blood-gothic crimson bloom, lower-right */
+    radial-gradient(ellipse 50% 35% at 94% 92%, rgba(160,   0,  35, 0.32) 0%, transparent 65%),
+    /* C.C.       — ghost of emerald, right edge (barely there) */
+    radial-gradient(ellipse 22% 28% at 99% 42%, rgba(  0, 170,  75, 0.07) 0%, transparent 60%),
+    /* Rena Ryuguu— warm sakura-haze rising from below */
+    radial-gradient(ellipse 70% 38% at 50% 105%, rgba(255, 90, 140, 0.20) 0%, transparent 55%),
+    /* nightcore nebula — amethyst core, centre */
+    radial-gradient(ellipse 80% 65% at 50%  48%, rgba( 80,  0, 150, 0.14) 0%, transparent 75%),
+    url("../../resources/space.jpg") center center / cover no-repeat fixed;
 
-  --modal-bg-color:    linear-gradient(160deg, #13001a 0%, #0a000d 100%) center center/cover no-repeat fixed;
-  --modal-header-color: linear-gradient(160deg, #1c0022 0%, #0f0015 100%) center center/cover no-repeat fixed;
-  --modal-footer-color: linear-gradient(160deg, #1c0022 0%, #0f0015 100%) center center/cover no-repeat fixed;
+  --modal-bg-color:     linear-gradient(160deg, #130018 0%, #050008 100%) center center / cover no-repeat fixed;
+  --modal-header-color: linear-gradient(160deg, #1e0028 0%, #100014 100%) center center / cover no-repeat fixed;
+  --modal-footer-color: linear-gradient(160deg, #1e0028 0%, #100014 100%) center center / cover no-repeat fixed;
 
-  --drop-down-menu-bg: #1e0028;
+  --drop-down-menu-bg: #1a0025;
 
-  --button-color:       #b8004d;
-  --button-color-hover: #ff1478;
-  --button-text:        #ffe0ea;
+  /* Misa at rest → Yuno on hover */
+  --button-color:       #8c0035;
+  --button-color-hover: #ff1c6e;
+  --button-text:        #ffd6e8;
   --button-text-hover:  #ffffff;
 
-  /* hot pink — yandere accent */
-  --accent-color:       255, 20, 120;
-  --accent-color-hover: rgba(var(--accent-color), .8);
+  /* electric sakura — Yuno's obsession */
+  --accent-color:       255, 28, 110;
+  --accent-color-hover: rgba(var(--accent-color), .75);
 
-  /* sakura link tones */
-  --link-color:         #ff7eaa;
-  --link-color-hover:   #ffcce0;
+  /* sakura-neon links */
+  --link-color:         #ff6fa3;
+  --link-color-hover:   #ffc8dc;
 
-  /* label sits on accent badges */
-  --label-text-color:   #0a000d;
+  --label-text-color:   #050008;
 
-  --text:               #ffe0ea;
+  --text:               #ffd6e8;
   --text-hover:         #ffffff;
-  --text-muted:         #8b5075;
+  --text-muted:         #7a3d60;
 
   /* Specials */
-  --arr-queue-color:    #ff7eaa;
-  --plex-poster-unwatched: #ff1478;
+  --arr-queue-color:    #ff6fa3;
+  --plex-poster-unwatched: #ff1c6e;
 
-  /* petio spinner — approximated for #ff1478 — https://codepen.io/jsm91/embed/ZEEawyZ */
-  --petio-spinner: invert(32%) sepia(90%) saturate(2400%) hue-rotate(308deg) brightness(112%) contrast(98%);
+  /* petio spinner — approximated for #ff1c6e — https://codepen.io/jsm91/embed/ZEEawyZ */
+  --petio-spinner: invert(24%) sepia(96%) saturate(3200%) hue-rotate(322deg) brightness(110%) contrast(100%);
 
-  --gitea-color-primary-dark-4: 255, 20, 120;
+  --gitea-color-primary-dark-4: 255, 28, 110;
 
-  --overseerr-gradient: radial-gradient(circle farthest-side at 15% 8%,  rgba(255, 20, 110, 0.14) 0%, rgba(255, 20, 110, 0)  52%),
-                        radial-gradient(circle farthest-side at 85% 92%, rgba(160,  0, 220, 0.11) 0%, rgba(160,  0, 220, 0)  52%),
-                        rgba(10, 0, 13, 0.96) center center/cover no-repeat fixed;
+  --overseerr-gradient:
+    radial-gradient(ellipse 60% 45% at  8%  5%, rgba(255,  18, 100, 0.38) 0%, transparent 65%),
+    radial-gradient(ellipse 50% 35% at 94% 92%, rgba(160,   0,  35, 0.32) 0%, transparent 65%),
+    radial-gradient(ellipse 70% 38% at 50% 105%, rgba(255, 90, 140, 0.20) 0%, transparent 55%),
+    rgba(5, 0, 8, 0.94) center center / cover no-repeat fixed;
 }
