@@ -1,17 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap");
+
 :root {
-  /* menhera — dark frutiger aero · yandere anime · nightcore void            */
-  /* hot fuchsia + phantom teal on a near-black amethyst sky                  */
+  /* menhera — Yuno Gasai · dark frutiger aero · yandere nightcore            */
+  /* purple-magenta eyes · blood-crimson floor · neon fuchsia on black void   */
 
   --main-bg-color:
-    /* yandere scream — electric fuchsia, top-left corner bloom */
-    radial-gradient(ellipse 65% 60% at   0%   0%, rgba(230,  0, 120, 0.72) 0%, transparent 62%),
-    /* frutiger soul — phantom teal, bottom-right anchor */
-    radial-gradient(ellipse 55% 50% at 100% 100%, rgba(  0, 215, 230, 0.38) 0%, transparent 58%),
-    /* amethyst void — deep violet ambient fill */
-    radial-gradient(ellipse 100% 85% at  50%  50%, rgba( 55,  0, 145, 0.58) 0%, transparent 75%),
-    /* sakura mist — warm-pink floor glow rising from below */
-    radial-gradient(ellipse 70% 28% at  50% 108%, rgba(255,  40, 120, 0.30) 0%, transparent 50%),
-    #000008 center center / cover no-repeat fixed;
+    /* neon fuchsia — yandere glow over the dark left void */
+    radial-gradient(ellipse 55% 50% at   0%   0%, rgba(218,  0, 155, 0.42) 0%, transparent 62%),
+    /* blood-crimson warmth — blends with the image's right vignette */
+    radial-gradient(ellipse 50% 60% at 105%  55%, rgba(110,  0,  18, 0.38) 0%, transparent 60%),
+    /* phantom teal — echoes the phone screen, lower-right */
+    radial-gradient(ellipse 35% 28% at 100% 100%, rgba(  0, 200, 220, 0.18) 0%, transparent 52%),
+    /* dark centre veil — subtle depth, keeps character readable */
+    radial-gradient(ellipse 70% 65% at  50%  50%, rgba( 10,  0,  22, 0.28) 0%, transparent 72%),
+    url("../../resources/menhera-bg.jpg") center center / cover no-repeat fixed;
 
   --modal-bg-color:     linear-gradient(135deg, #120022 0%, #040010 100%) center center / cover no-repeat fixed;
   --modal-header-color: linear-gradient(135deg, #1c0032 0%, #0a0018 100%) center center / cover no-repeat fixed;
@@ -19,38 +21,129 @@
 
   --drop-down-menu-bg: #110020;
 
-  /* blood-dark at rest → electric fuchsia on hover */
-  --button-color:       #780040;
-  --button-color-hover: #e6007a;
+  /* blood-crimson (floor) at rest → purple-magenta (eye glow) on hover */
+  --button-color:       #6e0018;
+  --button-color-hover: #d000b0;
   --button-text:        #ffe0f0;
   --button-text-hover:  #ffffff;
 
-  /* electric fuchsia — yandere heart */
-  --accent-color:       230, 0, 122;
+  /* purple-magenta — Yuno's glowing eyes */
+  --accent-color:       210, 0, 185;
   --accent-color-hover: rgba(var(--accent-color), .80);
 
-  /* neon-sakura links */
-  --link-color:         #ff4d96;
-  --link-color-hover:   #ffb3d4;
+  /* violet-pink links */
+  --link-color:         #e060cc;
+  --link-color-hover:   #f5b8ea;
 
-  --label-text-color:   #000008;
+  --label-text-color:   #04000c;
 
   --text:               #ffe0f0;
   --text-hover:         #ffffff;
-  --text-muted:         #6a2248;
+  --text-muted:         #6a2060;
 
   /* Specials */
-  --arr-queue-color:    #ff4d96;
-  --plex-poster-unwatched: #e6007a;
+  --arr-queue-color:    #e060cc;
+  --plex-poster-unwatched: #d000b0;
 
-  /* petio spinner — approximated for #e6007a — https://codepen.io/jsm91/embed/ZEEawyZ */
-  --petio-spinner: invert(16%) sepia(99%) saturate(5500%) hue-rotate(315deg) brightness(107%) contrast(105%);
+  /* petio spinner — approximated for #d000b0 — https://codepen.io/jsm91/embed/ZEEawyZ */
+  --petio-spinner: invert(14%) sepia(99%) saturate(6000%) hue-rotate(300deg) brightness(110%) contrast(112%);
 
-  --gitea-color-primary-dark-4: 230, 0, 122;
+  --gitea-color-primary-dark-4: 210, 0, 185;
 
   --overseerr-gradient:
-    radial-gradient(ellipse 65% 60% at   0%   0%, rgba(230,  0, 120, 0.72) 0%, transparent 62%),
-    radial-gradient(ellipse 55% 50% at 100% 100%, rgba(  0, 215, 230, 0.38) 0%, transparent 58%),
-    radial-gradient(ellipse 70% 28% at  50% 108%, rgba(255,  40, 120, 0.30) 0%, transparent 50%),
-    rgba(0, 0, 8, 0.94) center center / cover no-repeat fixed;
+    radial-gradient(ellipse 55% 50% at   0%   0%, rgba(218,  0, 155, 0.42) 0%, transparent 62%),
+    radial-gradient(ellipse 50% 60% at 105%  55%, rgba(110,  0,  18, 0.38) 0%, transparent 60%),
+    radial-gradient(ellipse 35% 28% at 100% 100%, rgba(  0, 200, 220, 0.18) 0%, transparent 52%),
+    rgba(4, 0, 12, 0.94) center center / cover no-repeat fixed;
+}
+
+/* === TYPOGRAPHY ============================================================ */
+
+body {
+  font-family: 'Outfit', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6,
+[class*="PrePlayPrimaryTitle-"],
+[class*="PageHeaderTitle-"],
+[class*="HubTitle-hubTitle-"],
+[class*="ServerDashboardPageHeader-headerTitle-"],
+[class*="PrePlayLeftTitle-leftTitle-"] {
+  font-family: 'Outfit', sans-serif !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.025em;
+}
+
+[class*="TabButton-"],
+[class*="PivotTab-button-"],
+[class*="SourceSidebarLink-title-"],
+[class*="SidebarList-sidebarListHeader-"],
+[class*="FormLabel-label-"],
+[class*="PrePlayDetailsGroupItem-label-"] {
+  font-family: 'Outfit', sans-serif !important;
+  letter-spacing: 0.01em;
+}
+
+/* === GLASSMORPHISM — MODALS ================================================ */
+
+[class*="ModalContent-modalContent-"],
+.modal-content {
+  background: rgba(10, 0, 20, 0.72) !important;
+  backdrop-filter: saturate(1.8) blur(24px) !important;
+  -webkit-backdrop-filter: saturate(1.8) blur(24px) !important;
+  border: 1px solid rgba(210, 0, 185, 0.20) !important;
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.70),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05) !important;
+}
+
+.modal-header {
+  background: rgba(22, 0, 38, 0.82) !important;
+  border-bottom: 1px solid rgba(210, 0, 185, 0.22) !important;
+  backdrop-filter: saturate(1.5) blur(20px) !important;
+  -webkit-backdrop-filter: saturate(1.5) blur(20px) !important;
+}
+
+.modal-footer {
+  background: rgba(22, 0, 38, 0.82) !important;
+  border-top: 1px solid rgba(210, 0, 185, 0.22) !important;
+  backdrop-filter: saturate(1.5) blur(20px) !important;
+  -webkit-backdrop-filter: saturate(1.5) blur(20px) !important;
+}
+
+/* === GLASSMORPHISM — NAVBAR ================================================ */
+
+[class*="NavBar-container-"] {
+  background: rgba(4, 0, 10, 0.60) !important;
+  backdrop-filter: saturate(1.8) blur(20px) !important;
+  -webkit-backdrop-filter: saturate(1.8) blur(20px) !important;
+  border-bottom: 1px solid rgba(210, 0, 185, 0.14) !important;
+}
+
+[class*="SourceSidebar-sidebar-"] {
+  border-right: 1px solid rgba(210, 0, 185, 0.12) !important;
+}
+
+/* === SCROLLBAR ============================================================= */
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 8, 0.96);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(210, 0, 185, 0.50);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(210, 0, 185, 0.85);
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
 }
