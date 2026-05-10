@@ -57,6 +57,14 @@
     rgba(4, 0, 12, 0.94) center center / cover no-repeat fixed;
 }
 
+/* === BACKGROUND — fix plex-base.css size/repeat cycling over 5 layers ===== */
+
+body,
+[class*="FullPageBackground-backgroundContainer-"] {
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+
 /* === TYPOGRAPHY ============================================================ */
 
 body {
