@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.bunny.net/css?family=outfit:300,400,500,600,700&display=swap");
 
 :root {
   /* menhera — Yuno Gasai · dark frutiger aero · yandere nightcore            */
@@ -13,7 +13,7 @@
     radial-gradient(ellipse 35% 28% at 100% 100%, rgba(  0, 200, 220, 0.18) 0%, transparent 52%),
     /* dark centre veil — subtle depth, keeps character readable */
     radial-gradient(ellipse 70% 65% at  50%  50%, rgba( 10,  0,  22, 0.28) 0%, transparent 72%),
-    url("../../resources/menhera-bg.jpg") center center / cover no-repeat fixed;
+    url("https://irisdotsh.github.io/theme.park/resources/menhera-bg.jpg") center center / cover no-repeat fixed;
 
   --modal-bg-color:     linear-gradient(135deg, #120022 0%, #040010 100%) center center / cover no-repeat fixed;
   --modal-header-color: linear-gradient(135deg, #1c0032 0%, #0a0018 100%) center center / cover no-repeat fixed;
