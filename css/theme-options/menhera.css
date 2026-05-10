@@ -1,58 +1,56 @@
 :root {
-  /* menhera — Y2K nightcore anime                                              */
-  /* Yuno · Misa · C.C. · Rena — four yandere souls drifting through dark sky  */
+  /* menhera — dark frutiger aero · yandere anime · nightcore void            */
+  /* hot fuchsia + phantom teal on a near-black amethyst sky                  */
 
   --main-bg-color:
-    /* Yuno Gasai — obsessive hot-pink aurora, top-left */
-    radial-gradient(ellipse 60% 45% at  8%  5%, rgba(255,  18, 100, 0.38) 0%, transparent 65%),
-    /* Misa Amane — blood-gothic crimson bloom, lower-right */
-    radial-gradient(ellipse 50% 35% at 94% 92%, rgba(160,   0,  35, 0.32) 0%, transparent 65%),
-    /* C.C.       — ghost of emerald, right edge (barely there) */
-    radial-gradient(ellipse 22% 28% at 99% 42%, rgba(  0, 170,  75, 0.07) 0%, transparent 60%),
-    /* Rena Ryuguu— warm sakura-haze rising from below */
-    radial-gradient(ellipse 70% 38% at 50% 105%, rgba(255, 90, 140, 0.20) 0%, transparent 55%),
-    /* nightcore nebula — amethyst core, centre */
-    radial-gradient(ellipse 80% 65% at 50%  48%, rgba( 80,  0, 150, 0.14) 0%, transparent 75%),
-    url("../../resources/space.jpg") center center / cover no-repeat fixed;
+    /* yandere scream — electric fuchsia, top-left corner bloom */
+    radial-gradient(ellipse 65% 60% at   0%   0%, rgba(230,  0, 120, 0.72) 0%, transparent 62%),
+    /* frutiger soul — phantom teal, bottom-right anchor */
+    radial-gradient(ellipse 55% 50% at 100% 100%, rgba(  0, 215, 230, 0.38) 0%, transparent 58%),
+    /* amethyst void — deep violet ambient fill */
+    radial-gradient(ellipse 100% 85% at  50%  50%, rgba( 55,  0, 145, 0.58) 0%, transparent 75%),
+    /* sakura mist — warm-pink floor glow rising from below */
+    radial-gradient(ellipse 70% 28% at  50% 108%, rgba(255,  40, 120, 0.30) 0%, transparent 50%),
+    #000008 center center / cover no-repeat fixed;
 
-  --modal-bg-color:     linear-gradient(160deg, #130018 0%, #050008 100%) center center / cover no-repeat fixed;
-  --modal-header-color: linear-gradient(160deg, #1e0028 0%, #100014 100%) center center / cover no-repeat fixed;
-  --modal-footer-color: linear-gradient(160deg, #1e0028 0%, #100014 100%) center center / cover no-repeat fixed;
+  --modal-bg-color:     linear-gradient(135deg, #120022 0%, #040010 100%) center center / cover no-repeat fixed;
+  --modal-header-color: linear-gradient(135deg, #1c0032 0%, #0a0018 100%) center center / cover no-repeat fixed;
+  --modal-footer-color: linear-gradient(135deg, #1c0032 0%, #0a0018 100%) center center / cover no-repeat fixed;
 
-  --drop-down-menu-bg: #1a0025;
+  --drop-down-menu-bg: #110020;
 
-  /* Misa at rest → Yuno on hover */
-  --button-color:       #8c0035;
-  --button-color-hover: #ff1c6e;
-  --button-text:        #ffd6e8;
+  /* blood-dark at rest → electric fuchsia on hover */
+  --button-color:       #780040;
+  --button-color-hover: #e6007a;
+  --button-text:        #ffe0f0;
   --button-text-hover:  #ffffff;
 
-  /* electric sakura — Yuno's obsession */
-  --accent-color:       255, 28, 110;
-  --accent-color-hover: rgba(var(--accent-color), .75);
+  /* electric fuchsia — yandere heart */
+  --accent-color:       230, 0, 122;
+  --accent-color-hover: rgba(var(--accent-color), .80);
 
-  /* sakura-neon links */
-  --link-color:         #ff6fa3;
-  --link-color-hover:   #ffc8dc;
+  /* neon-sakura links */
+  --link-color:         #ff4d96;
+  --link-color-hover:   #ffb3d4;
 
-  --label-text-color:   #050008;
+  --label-text-color:   #000008;
 
-  --text:               #ffd6e8;
+  --text:               #ffe0f0;
   --text-hover:         #ffffff;
-  --text-muted:         #7a3d60;
+  --text-muted:         #6a2248;
 
   /* Specials */
-  --arr-queue-color:    #ff6fa3;
-  --plex-poster-unwatched: #ff1c6e;
+  --arr-queue-color:    #ff4d96;
+  --plex-poster-unwatched: #e6007a;
 
-  /* petio spinner — approximated for #ff1c6e — https://codepen.io/jsm91/embed/ZEEawyZ */
-  --petio-spinner: invert(24%) sepia(96%) saturate(3200%) hue-rotate(322deg) brightness(110%) contrast(100%);
+  /* petio spinner — approximated for #e6007a — https://codepen.io/jsm91/embed/ZEEawyZ */
+  --petio-spinner: invert(16%) sepia(99%) saturate(5500%) hue-rotate(315deg) brightness(107%) contrast(105%);
 
-  --gitea-color-primary-dark-4: 255, 28, 110;
+  --gitea-color-primary-dark-4: 230, 0, 122;
 
   --overseerr-gradient:
-    radial-gradient(ellipse 60% 45% at  8%  5%, rgba(255,  18, 100, 0.38) 0%, transparent 65%),
-    radial-gradient(ellipse 50% 35% at 94% 92%, rgba(160,   0,  35, 0.32) 0%, transparent 65%),
-    radial-gradient(ellipse 70% 38% at 50% 105%, rgba(255, 90, 140, 0.20) 0%, transparent 55%),
-    rgba(5, 0, 8, 0.94) center center / cover no-repeat fixed;
+    radial-gradient(ellipse 65% 60% at   0%   0%, rgba(230,  0, 120, 0.72) 0%, transparent 62%),
+    radial-gradient(ellipse 55% 50% at 100% 100%, rgba(  0, 215, 230, 0.38) 0%, transparent 58%),
+    radial-gradient(ellipse 70% 28% at  50% 108%, rgba(255,  40, 120, 0.30) 0%, transparent 50%),
+    rgba(0, 0, 8, 0.94) center center / cover no-repeat fixed;
 }
